@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatchLayout"
+    android:fitsSystemWindows="true"
+    tools:context=".features.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/MatchWrapLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                style="@style/WrapWrapLayout"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--<android.support.design.widget.TabLayout
+            android:id="@+id/tabsHome"
+            style="@style/MatchWrapLayout"
+            app:tabMode="fixed"
+            app:tabGravity="center"
+            app:tabTextColor="@android:color/white"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabIndicatorColor="@android:color/white" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- <android.support.v4.view.ViewPager
+         android:id="@+id/vpHome"
+         style="@style/MatchMatchLayout"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+    <include layout="@layout/view_fragment_container" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MatchMatchLayout"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

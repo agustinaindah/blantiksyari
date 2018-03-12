@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatchLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blantik.blantik.features.popular_product.detail.DetailPopularProductActivity"
+    tools:showIn="@layout/activity_detail_popular_product">
+
+    <LinearLayout
+        android:id="@+id/layContainer"
+        style="@style/MatchWrapLayout"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDescription"
+            style="@style/MatchWrapLayout"
+            android:layout_margin="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtContentTitleProduct"
+                    style="@style/MatchWrapLayout"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtContentPriceProduct"
+                    style="@style/MatchWrapLayout"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDescSeller"
+            style="@style/MatchWrapLayout"
+            android:layout_margin="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNameSeller"
+                    style="@style/WrapWrapLayout"
+                    android:drawableLeft="@drawable/ic_account_circle"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text=" Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtAddressSeller"
+                    style="@style/WrapWrapLayout"
+                    android:drawableLeft="@drawable/ic_map"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text=" Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtContactSeller"
+                    style="@style/WrapWrapLayout"
+                    android:drawableLeft="@drawable/ic_contact_mail"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text=" Contact"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+                <!--
+                                <TextView
+                                    android:id="@+id/txtContactBBMSeller"
+                                    style="@style/WrapWrapLayout"
+                                    android:drawableLeft="@drawable/ic_home"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:text="Pin bbm"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />-->
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            style="@style/MatchMatchLayout"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey_300" />
+
+        <TextView
+            style="@style/AppTheme.TitleProductDetail"
+            android:layout_margin="7dp"
+            android:text="@string/label_product_desc" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expandProductDetailDesc"
+            style="@style/MatchWrapLayout"
+            android:padding="7dp"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                style="@style/MatchWrapLayout"
+                android:fontFamily="Helvetica Neue"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+            <!--"Helvetica Neue",Helvetica,Arial,sans-serif-->
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                style="@style/WrapWrapLayout"
+                android:layout_gravity="center|bottom"
+                android:background="@android:color/transparent"
+                android:padding="7dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <FrameLayout
+            style="@style/MatchMatchLayout"
+            android:layout_height="2dp"
+            android:background="@color/grey_300" />
+
+        <!--<FrameLayout
+            style="@style/MatchWrapLayout"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <TextView
+            style="@style/AppTheme.TitleProductDetail"
+            android:layout_margin="5dp"
+            android:text="@string/label_product_spesification" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expandProductDetailSpesification"
+            style="@style/MatchWrapLayout"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                style="@style/MatchWrapLayout"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                style="@style/WrapWrapLayout"
+                android:layout_gravity="center|bottom"
+                android:background="@android:color/transparent"
+                android:padding="10dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <FrameLayout
+            style="@style/MatchWrapLayout"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <TextView
+            style="@style/AppTheme.TitleProductDetail"
+            android:layout_margin="5dp"
+            android:text="@string/label_product_faq" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expandProductDetailFaq"
+            style="@style/MatchWrapLayout"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                style="@style/MatchWrapLayout"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                style="@style/WrapWrapLayout"
+                android:layout_gravity="center|bottom"
+                android:background="@android:color/transparent"
+                android:padding="10dp" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>-->
+
+        <!-- <android.support.v7.widget.CardView
+             android:id="@+id/cardRelatedProduct"
+             style="@style/MatchWrapLayout"
+             android:layout_height="45dp"
+             android:layout_margin="5dp"
+             android:layout_marginTop="10dp"
+             android:background="?android:attr/selectableItemBackground"
+             android:clickable="true"
+             app:contentPadding="5dp">
+
+             <LinearLayout
+                 android:id="@+id/layListRelatedProduct"
+                 style="@style/MatchWrapLayout"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     style="@style/WrapWrapLayout"
+                     android:layout_marginRight="120dp"
+                     android:drawablePadding="5dp"
+                     android:gravity="center_vertical"
+                     android:padding="5dp"
+                     android:text=" Lihat Produk yang terkait"
+                     android:textColor="@android:color/black"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     style="@style/WrapWrapLayout"
+                     android:drawablePadding="5dp"
+                     android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                     android:gravity="center_vertical"
+                     android:padding="5dp"
+                     android:textSize="14sp" />
+
+             </LinearLayout>
+
+         </android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGridProductRelated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

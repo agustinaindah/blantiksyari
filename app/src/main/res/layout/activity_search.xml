@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/MatchMatchLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        style="@style/MatchWrapLayout" />
+
+    <TextView
+        android:id="@+id/txtNoData"
+        style="@style/MatchMatchLayout"
+        android:text="@string/no_data"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="18sp"/>
+
+    <include layout="@layout/progress_layout" />
+
+    <include layout="@layout/view_error"/>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabFilter"
+        style="@style/WrapWrapLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_search"
+        app:backgroundTint="@color/material_red" />-->
+
+</RelativeLayout>

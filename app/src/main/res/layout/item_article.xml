@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardItemArticle"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemArticle"
+        style="@style/MatchMatchLayout"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/imgItemArticle"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_300"
+            android:transitionName="@string/transition_string" />
+
+        <RelativeLayout
+            style="@style/MatchWrapLayout"
+            android:layout_below="@id/imgItemArticle"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtItemArticleTitle"
+                style="@style/MatchWrapLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="Tutorial Menghilangkan Jerawat"
+                android:textColor="@color/material_blue_grey_800"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtItemArticleDesc"
+                style="@style/MatchWrapLayout"
+                android:layout_below="@+id/txtItemArticleTitle"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="lorem ipsum dolor sit amet consencu..." />
+
+            <!--  <TextView
+                  android:id="@+id/txtItemCreatorArticle"
+                  style="@style/MatchWrapLayout"
+                  android:layout_below="@+id/txtItemArticleDesc"
+                  android:layout_marginBottom="5dp"
+                  android:gravity="center_vertical"
+                  android:text="lorem ipsum"
+                  android:textSize="15sp" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

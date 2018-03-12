@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapLayout">
+
+    <LinearLayout
+        android:id="@+id/layCategories"
+        style="@style/MatchWrapLayout"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtCategoryTitle"
+            style="@style/MatchWrapLayout"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="Fashion"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgCategorySub"
+            style="@style/WrapWrapLayout"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_next" />
+    </LinearLayout>
+
+
+</LinearLayout>

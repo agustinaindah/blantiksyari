@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapLayout"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtProductDetailLabel"
+        style="@style/MatchMatchLayout"
+        android:background="@color/flat_clouds"
+        android:text="Kaki"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/txtProductDetailText"
+        style="@style/MatchWrapLayout"
+        android:background="@android:color/white"
+        android:text="1"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp" />
+
+</LinearLayout>

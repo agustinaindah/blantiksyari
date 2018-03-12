@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.blantik" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BlantikApps"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_blantiksyari"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".features.splash.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="features.search.SearchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.home.detail.DetailProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".features.popular_product.detail.DetailPopularProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".features.category.CategoryActivity"
+            android:label="Category"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.category.productbycategory.ProductByCategoryActivity"
+            android:label="Category"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.article.ArticleActivtity"
+            android:label="Article"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.contact_us.ContactUsActivity"
+            android:label="Contact Us"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.article.detail.DetailArticleActivity"
+            android:label="@string/title_activity_detail_article"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

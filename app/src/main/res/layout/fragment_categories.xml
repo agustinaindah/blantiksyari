@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layCategory"
+    android:background="@color/flat_clouds"
+    style="@style/MatchMatchLayout">
+
+    <!-- <include layout="@layout/progress_bar" />-->
+
+    <include layout="@layout/progress_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFragmentCategory"
+        style="@style/MatchMatchLayout" />
+
+    <include layout="@layout/view_error"/>
+
+</RelativeLayout>

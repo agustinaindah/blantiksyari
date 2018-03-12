@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">blantik</string>
+
+    <string name="base_url">http://blantik.owner99.com/api/</string>
+    <!--<string name="base_url">http://owner99.com/api/</string>-->
+    <string name="X_API_KEY">12345</string>
+
+    <string name="action_back_pressed">If you click once again the app will be closed</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">Loading...</string>
+
+    <string name="label_home">Home</string>
+    <string name="label_article">Article</string>
+    <string name="label_gallery">Gallery</string>
+    <string name="label_contact_us">Contact Us</string>
+    <string name="label_category">Category</string>
+    <string name="label_produk_terbaru">Produk Terbaru</string>
+    <string name="label_product_desc">Deskripsi Produk</string>
+    <string name="label_product_spesification">Spesifikasi Produk</string>
+    <string name="label_product_spec_desc">Spesifikasi Deskripsi</string>
+    <string name="label_product_faq">FAQ (COD) (Cash On Delivery)</string>
+    <string name="transition_string">transition</string>
+    <string name="label_save">Save</string>
+    <string name="msg_empty">harus diisi</string>
+    <string name="msg_not_valid">tidak valid</string>
+    <string name="msg_not_connect">Tidak ada jaringan</string>
+    <string name="text_sent_message">Pesan Berhasil Terkirim</string>
+
+    <string name="label_article_desc">Deskripsi Artikel</string>
+    <!--label-->
+
+    <string name="no_data">Tidak ada data</string>
+    <string name="title_activity_detail_product">DetailProductActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_popular_product">DetailPopularProductActivity</string>
+    <string name="title_activity_detail_article">DetailArticleActivity</string>
+
+</resources>

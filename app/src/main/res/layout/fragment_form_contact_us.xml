@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout">
+
+    <LinearLayout
+        style="@style/MatchMatchLayout"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardMessage"
+            style="@style/MatchWrapLayout"
+            android:layout_marginTop="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <android.support.design.widget.TextInputLayout style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNama"
+                        style="@style/AppTheme.EditTextMaterial"
+                        android:hint="Nama" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        style="@style/AppTheme.EditTextMaterial"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtContent"
+                        style="@style/AppTheme.EditTextMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:hint="Pesan"
+                        android:gravity="start"
+                        android:inputType="textMultiLine" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/MatchWrapLayout"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/label_save"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
